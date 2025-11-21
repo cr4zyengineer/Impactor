@@ -40,10 +40,14 @@ pub enum Error {
 }
 
 pub fn get_data_path() -> PathBuf {
-    let dir = Path::new(&env::var("HOME").unwrap())
-        .join(".config")
-        .join("PlumeImpactor");
-    
+    let base = if cfg!(windows) {
+        env::var("APPDATA").unwrap()
+    } else {
+        env::var("HOME").unwrap() + "/.config"
+    };
+
+    let dir = Path::new(&base).join("PlumeImpactor");
+
     fs::create_dir_all(&dir).ok();
     
     dir
