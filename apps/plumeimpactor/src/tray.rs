@@ -16,10 +16,10 @@ pub(crate) fn build_tray_icon(menu: &Menu) -> TrayIcon {
 }
 
 fn load_icon() -> Icon {
-    #[cfg(all(target_os = "macos"))]
-    let bytes = include_bytes!("./tray.png");
-    #[cfg(all(not(target_os = "macos")))]
+    #[cfg(target_os = "windows")]
     let bytes = include_bytes!("./tray_colored.png");
+    #[cfg(all(not(target_os = "windows")))]
+    let bytes = include_bytes!("./tray.png");
     let image = image::load_from_memory(bytes)
         .expect("Failed to load icon bytes")
         .to_rgba8();
