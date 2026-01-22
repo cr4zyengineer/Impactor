@@ -1,8 +1,6 @@
 name: "Build & Bundle"
 on:
   push:
-    branches:
-      - main
     paths:
       - "crates/**"
       - "Cargo.toml"
