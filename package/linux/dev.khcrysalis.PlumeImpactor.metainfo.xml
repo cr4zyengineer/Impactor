@@ -44,8 +44,8 @@
     <color type="primary" scheme_preference="dark">#a6415b</color>
   </branding>
   <releases>
-    <release version="v2.0.2" date="2026-01-22" type="stable">
-      <url>https://github.com/khcrysalis/Impactor/releases/tag/v2.0.2</url>
+    <release version="v2.0.2" date="2026-01-22">
+      <url type="details">https://github.com/khcrysalis/Impactor/releases/tag/v2.0.2</url>
       <description>
         <p>What's Changed</p>
         <ul>
@@ -54,7 +54,7 @@
         </ul>
       </description>
     </release>
-    <release version="2.0.0" date="2026-1-19" type="stable">
+    <release version="2.0.0" date="2026-1-19">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v2.0.0</url>
       <description>
         <p>Full rewriting using iced, many new features.</p>
@@ -70,7 +70,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.4.1" date="2026-1-10" type="stable">
+    <release version="1.4.1" date="2026-1-10">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.4.1</url>
       <description>
         <p>New application icon, multiple bug fixes</p>
@@ -82,7 +82,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.4.0" date="2025-12-29" type="stable">
+    <release version="1.4.0" date="2025-12-29">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.4.0</url>
       <description>
         <p>Older macOS support, portable windows exe and fixes</p>
@@ -96,7 +96,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.3.0" date="2025-12-22" type="stable">
+    <release version="1.3.0" date="2025-12-22">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.3.0</url>
       <description>
         <p>Dark mode for Windows and more</p>
@@ -111,7 +111,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.2.0" date="2025-12-13" type="stable">
+    <release version="1.2.0" date="2025-12-13">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.2.0</url>
       <description>
         <p>Liquid glass, tweak injection, adhoc signing and more</p>
@@ -128,7 +128,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.1.1" date="2025-12-1" type="stable">
+    <release version="1.1.1" date="2025-12-1">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.1.1</url>
       <description>
         <p>Fix improper signing for some dylibs and more</p>
@@ -140,7 +140,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.1.0" date="2025-11-27" type="stable">
+    <release version="1.1.0" date="2025-11-27">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.1.0</url>
       <description>
         <p>Linux arm64 support, fixed macOS logins and more</p>
@@ -154,7 +154,7 @@
         </ul>
       </description>
     </release>
-    <release version="1.0.0" date="2025-11-24" type="stable">
+    <release version="1.0.0" date="2025-11-24">
       <url type="details">https://github.com/khcrysalis/PlumeImpactor/releases/tag/v1.0.0</url>
       <description>
         <p>Initial release</p>
