@@ -108,6 +108,7 @@ You can retrieve this file by either sideloading the supported app of your choic
 - [Paige](https://github.com/paigely) – Icon & flatpak distribution.
 - [SideStore](https://github.com/SideStore/apple-private-apis) – Grandslam auth & Omnisette.
 - [gms.py](https://gist.github.com/JJTech0130/049716196f5f1751b8944d93e73d3452) – Grandslam auth API references.
+- [isideload](https://github.com/nab138/isideload) - Code for properly grabbing Xcode token.
 - [Sideloader](https://github.com/Dadoum/Sideloader) – Apple Developer API references.
 - [PyDunk](https://github.com/nythepegasus/PyDunk) – `v1` Apple Developer API references.
 - [idevice](https://github.com/jkcoxson/idevice) – Used for communication with `installd`, specifically for sideloading the apps to your devices.
