@@ -848,9 +848,17 @@ impl Impactor {
                     {
                         Ok(_) => {
                             let _ = tx.send(("Installation complete!".to_string(), 100));
+
+                            if std::env::var("PLUME_DELETE_AFTER_FINISHED").is_err() {
+                                package.remove_package_stage();
+                            }
                         }
                         Err(e) => {
                             let _ = tx_error.send((format!("Error: {}", e), -1));
+
+                            if std::env::var("PLUME_DELETE_AFTER_FINISHED").is_err() {
+                                package.remove_package_stage();
+                            }
                         }
                     }
                 });
