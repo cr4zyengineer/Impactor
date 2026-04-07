@@ -44,6 +44,17 @@
     <color type="primary" scheme_preference="dark">#a6415b</color>
   </branding>
   <releases>
+    <release version="v2.2.1" date="2026-04-07">
+      <url type="details">https://github.com/CLARATION/Impactor/releases/tag/v2.2.1</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Added proper icon masking for AppIcon previews by @se2crid </li>
+          <li>Added support for SideStore(+LiveContainer) remote pairing file installation.</li>
+          <li>Fixed apps (i.e. [FilzaJailedDS](https://github.com/34306/FilzaJailedDS)) registering invalid group identifiers that start with anything other than `group.`, by not registering them at all.</li>
+        </ul>
+      </description>
+    </release>
     <release version="v2.2.0" date="2026-04-05">
       <url type="details">https://github.com/CLARATION/Impactor/releases/tag/v2.2.0</url>
       <description>
