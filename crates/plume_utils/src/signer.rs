@@ -291,7 +291,11 @@ impl Signer {
 
                 if let Some(app_groups) = macho.app_groups_for_entitlements() {
                     let mut app_group_ids: Vec<String> = Vec::new();
+
                     for group in &app_groups {
+                        if !group.starts_with("group.") {
+                            continue;
+                        }
                         let mut group_name = format!("{group}.{team_id}");
 
                         if is_refresh {
@@ -302,6 +306,15 @@ impl Signer {
                             .await?;
                         app_group_ids.push(group_id.application_group);
                     }
+
+                    let default_group = format!("group.{}.{}", id, team_id);
+                    if !app_group_ids.contains(&default_group) {
+                        let default_group_id = session
+                            .qh_ensure_app_group(&team_id, &default_group, &default_group)
+                            .await?;
+                        app_group_ids.push(default_group_id.application_group);
+                    }
+
                     if !is_refresh {
                         if signer_settings.app == SignerApp::SideStore
                             || signer_settings.app == SignerApp::AltStore
