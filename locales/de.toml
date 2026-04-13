@@ -1,6 +1,6 @@
 _language_name = "Deutsch"
 
-install = "Laden"
+install = "Installieren"
 export = "Exportieren"
 drag_and_drop = "IPA per Drag & Drop hier ablegen"
 select_ipa = "Wähle eine IPA/TIPA Datei aus"
